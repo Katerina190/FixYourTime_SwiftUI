@@ -7,20 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C80E22242CDA9F0B00C55086 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80E22232CDA9F0B00C55086 /* NotificationView.swift */; };
+		C80E22272CDAB56100C55086 /* AppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80E22262CDAB56100C55086 /* AppearanceView.swift */; };
 		C864778A2CAAD0B9009407D0 /* FixYourTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86477892CAAD0B9009407D0 /* FixYourTimeApp.swift */; };
 		C864778C2CAAD0B9009407D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864778B2CAAD0B9009407D0 /* ContentView.swift */; };
 		C864778E2CAAD0BB009407D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C864778D2CAAD0BB009407D0 /* Assets.xcassets */; };
 		C86477912CAAD0BB009407D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86477902CAAD0BB009407D0 /* Preview Assets.xcassets */; };
 		C864779A2CAAD9DD009407D0 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86477992CAAD9DD009407D0 /* LaunchScreenView.swift */; };
+		C864779C2CAC8886009407D0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864779B2CAC8886009407D0 /* MainView.swift */; };
+		C864779E2CAC888F009407D0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864779D2CAC888F009407D0 /* SettingsView.swift */; };
+		C86477A02CAC88AC009407D0 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864779F2CAC88AC009407D0 /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C80E22232CDA9F0B00C55086 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C80E22262CDAB56100C55086 /* AppearanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceView.swift; sourceTree = "<group>"; };
 		C86477862CAAD0B9009407D0 /* FixYourTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixYourTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86477892CAAD0B9009407D0 /* FixYourTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixYourTimeApp.swift; sourceTree = "<group>"; };
 		C864778B2CAAD0B9009407D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C864778D2CAAD0BB009407D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C86477902CAAD0BB009407D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C86477992CAAD9DD009407D0 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		C864779B2CAC8886009407D0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C864779D2CAC888F009407D0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C864779F2CAC88AC009407D0 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +44,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C80E22252CDAB4CA00C55086 /* SettingsViews */ = {
+			isa = PBXGroup;
+			children = (
+				C80E22292CDAB5AF00C55086 /* AdditionalSettings */,
+				C80E22282CDAB59700C55086 /* MainSettings */,
+			);
+			path = SettingsViews;
+			sourceTree = "<group>";
+		};
+		C80E22282CDAB59700C55086 /* MainSettings */ = {
+			isa = PBXGroup;
+			children = (
+				C80E22232CDA9F0B00C55086 /* NotificationView.swift */,
+				C80E22262CDAB56100C55086 /* AppearanceView.swift */,
+			);
+			name = MainSettings;
+			sourceTree = "<group>";
+		};
+		C80E22292CDAB5AF00C55086 /* AdditionalSettings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AdditionalSettings;
+			sourceTree = "<group>";
+		};
 		C864777D2CAAD0B9009407D0 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +90,10 @@
 			children = (
 				C86477892CAAD0B9009407D0 /* FixYourTimeApp.swift */,
 				C864778B2CAAD0B9009407D0 /* ContentView.swift */,
+				C864779B2CAC8886009407D0 /* MainView.swift */,
+				C864779F2CAC88AC009407D0 /* CalendarView.swift */,
+				C864779D2CAC888F009407D0 /* SettingsView.swift */,
+				C80E22252CDAB4CA00C55086 /* SettingsViews */,
 				C86477992CAAD9DD009407D0 /* LaunchScreenView.swift */,
 				C864778D2CAAD0BB009407D0 /* Assets.xcassets */,
 				C864778F2CAAD0BB009407D0 /* Preview Content */,
@@ -140,7 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C864779E2CAC888F009407D0 /* SettingsView.swift in Sources */,
 				C864778C2CAAD0B9009407D0 /* ContentView.swift in Sources */,
+				C80E22272CDAB56100C55086 /* AppearanceView.swift in Sources */,
+				C86477A02CAC88AC009407D0 /* CalendarView.swift in Sources */,
+				C80E22242CDA9F0B00C55086 /* NotificationView.swift in Sources */,
+				C864779C2CAC8886009407D0 /* MainView.swift in Sources */,
 				C864778A2CAAD0B9009407D0 /* FixYourTimeApp.swift in Sources */,
 				C864779A2CAAD9DD009407D0 /* LaunchScreenView.swift in Sources */,
 			);
