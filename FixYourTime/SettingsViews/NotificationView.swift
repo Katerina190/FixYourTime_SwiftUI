@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct NotificationView: View {
+    
+    @State private var timeIsOn = false
+    @State private var timeIsOff = false
+    
     var body: some View {
         NavigationStack {
-            Text("Hello")
-                .navigationTitle("Notifications")
+            Form {
+                Toggle("Morning notification", isOn: $timeIsOn)
+                Toggle("Evening notification", isOn: $timeIsOff)
+            }
+            .navigationTitle("Notifications")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Save") {
+                        print("Saved")
+                    }
+                }
+                }
+                
+            }
         }
-    }
-}
+            }
+                
+    
+
 
 #Preview {
     NotificationView()

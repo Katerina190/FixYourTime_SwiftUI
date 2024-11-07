@@ -16,15 +16,16 @@ struct SettingsView: View {
                         Section(header: Text(settingCase.groupName)) {
                             ForEach(settingCase.members) { member in
                                 NavigationLink(destination: member.destinationView) {
-                                            Text(member.caseName)
-                                        }
+                                        Text(member.caseName)
+                                    }
                                 }
+                            }
                             }
                         }
                     }.navigationTitle("Settings")
+                .navigationBarTitleDisplayMode(.inline)
         }
-            }
-        }
+    }
 
 struct SettingsGroup: Identifiable {
     var id = UUID()
@@ -37,12 +38,13 @@ struct Choice: Identifiable {
     var id = UUID()
     var caseName: String
     var destinationView: AnyView
+    var openSettings: Bool = false
 }
 
 let settingsCases = [
     SettingsGroup(groupName: "Main", members: [
         Choice(caseName: "Notification", destinationView: AnyView(NotificationView())),
-        Choice(caseName: "Language", destinationView: AnyView(NotificationView())),
+        Choice(caseName: "Language", destinationView: AnyView(NotificationView()), openSettings: true),
         Choice(caseName: "Appearance", destinationView: AnyView(AppearanceView()))
     ]),
     SettingsGroup(groupName: "Additional", members: [
